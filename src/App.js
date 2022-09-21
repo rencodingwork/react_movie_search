@@ -28,7 +28,10 @@ const App = () => {
 
     return (
         <div className="app">
-            <h1>冬冬影城</h1>
+            <div className="title">
+                <h1>冬冬影城</h1>
+
+            </div>
 
             <div className="search">
                 <input 

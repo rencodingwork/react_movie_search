@@ -14,7 +14,9 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  /* background-color: #212426; */
+  background-image: url("../login.jpg");
+  background-size: cover;
 }
 
 .app {
@@ -24,20 +26,29 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  backdrop-filter: blur(3px);
 }
 
 h1 {
-  font-size: 3rem;
+
+  font-size: 5rem;
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 0%,
+    red 0%,
     rgba(249, 211, 180, 0) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+}
+
+.title{
+  box-sizing: border-box;
+  background-color: #1c1d1f;
+  border-radius: 3pc;
+  padding: 3px;
 }
 
 .search {
@@ -112,6 +123,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #1c1d1f;
 }
 
 .movie {
